@@ -15,12 +15,11 @@ addresElem.send_keys(Keys.ENTER) #Sends the address.
 time.sleep(5)
 
 Super = browser.find_element(By.XPATH, '//*[@id="main-content"]/div/div[1]/div[1]/nav/ul/li[3]/a')
-#Gets to the Super section of uber eats. It's done with an xpath due to the dynamic elements of the page.
-
 time.sleep(5)
 Super.click()
-
 time.sleep(5)
+
+#Gets to the Super section of uber eats. It's done with an xpath due to the dynamic elements of the page.
 
 productSearch = browser.find_element(By. XPATH, '//*[@id="search-field"]') 
 productSearch.click()
